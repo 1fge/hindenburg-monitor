@@ -57,7 +57,7 @@ func loadWebhookURL() error {
 		return ErrLoadingEnv
 	}
 
-	webhookURL = os.Getenv("webhookurl")
+	webhookURL = os.Getenv("WEBHOOKURL")
 
 	parsedHook, err := url.ParseRequestURI(webhookURL)
 	if err != nil {
