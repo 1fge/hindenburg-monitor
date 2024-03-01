@@ -16,7 +16,7 @@ const (
 )
 
 var (
-	debug        = true
+	debug        = false
 	refreshDelay = 2500 * time.Millisecond
 	webhookURL   string
 
