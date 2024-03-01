@@ -136,6 +136,7 @@ func sitemapExtractFresh(resp []byte) (map[string]ContentItem, error) {
 	return freshMap, nil
 }
 
+// pullAllSitemapItems returns a slice of URLs we pull from sitemap page
 func pullAllSitemapItems(resp []byte) ([]string, error) {
 	var urlSet UrlSet
 	var parsedURLs []string
