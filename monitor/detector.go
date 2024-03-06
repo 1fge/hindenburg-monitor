@@ -61,7 +61,7 @@ func (r *RouteMonitor) fetchEndpoint() ([]byte, error) {
 		return nil, err
 	}
 
-	req.Header = defaultGetHeaders
+	req.Header = defaultGetHeaders.Clone()
 
 	resp, err := r.client.Do(req)
 	if err != nil {
